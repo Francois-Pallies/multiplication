@@ -1,0 +1,127 @@
+/*Mise en page*/
+body {
+    background-color: cadetblue;
+}
+h1 {
+    font-family: 'Freckle Face', cursive;
+    font-size: 4em;
+    color: white;
+}
+h2 {
+    font-family: 'Freckle Face', cursive;
+    font-size: 2em;
+    color:red;
+}
+#titre {
+    height: 10vh;
+}
+#content {
+    height: 78vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#centre {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Setup Menu*/
+
+#btnDiv {
+    height: 50px;
+}
+#choix {
+    color: white;
+    height: 50px;
+}
+
+
+/*Choix de la table*/
+
+#tableSelector {
+    color: white;
+    background-color: teal;
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+}
+#calcul, #tableChoisie {
+    font-size: 3em;
+}
+#startBtn {
+    color: white;
+    background-color: teal;
+    border: none;
+    border-radius: 5px;
+    display: none;
+    width: 100px;
+    height: 60px;
+}
+
+/*Jeu*/
+
+#answer, #answerSend {
+    display: none;
+}
+
+#calcul {
+    color: white;   
+}
+#answer {
+    text-align: center;
+    color: white;
+    background-color: rgb(46, 150, 150);
+    border: none;
+    border-radius: 5px;
+    font-size: 3em;
+    height: 100px;
+    width: 200px;
+}
+#answerSend {
+    color: white;
+    background-color: teal;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5, 5, 5, 5;
+    height: 60px;
+    width: 100px;
+}
+#resetBtn {
+    display: none;
+    color: white;
+    background-color: teal;
+    border: none;
+    border-radius: 5px;
+    display: none;
+    width: 150px;
+    height: 60px;
+}
+#finalScore {
+    display: none;
+    font-size: 4em;
+    color: white;
+}
+
+/*Pied de page*/
+
+#congratulations {
+    color: white;
+    font-size: 3em;
+    font-family: 'Freckle Face', cursive;
+}
+.scoreQuestion {
+    border: solid 2px rgb(31, 31, 68);
+    border-radius: 5px;
+    background-color: teal;
+    border: none;
+    border-radius: 5px;
+}
+.ScoreQuestionContent {
+
+    font-size: 1.5em;
+    color: white;
+}

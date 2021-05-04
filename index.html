@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables de Multiplication</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--link Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+</head>
+<body class="container-fluid">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center align-items-center" id="titre">
+            <h1 >Mes Tables de Multiplications</h1>
+        </div>
+    </div>
+    <div id="content">
+        <div id="centre">
+            <div class="container">
+                <form class="row" id="formRow">
+                    <div class="col-12 d-flex justify-content-center align-items-center py-4" id="choixSelector">
+                        <select name="Tables" id="tableSelector">
+                            <option value="0">Choisissez une table dans la liste</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>       
+                    </div>
+                </form>
+                <div class="row" id="rowDuChoix">
+                    <div class="col-12 mb-5 d-flex justify-content-center align-items-center" id="choix">
+                        <div id="tableChoisie">
+                            
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center" id="btnDiv">
+                        <input type="button" value="Start" id="startBtn">                  
+                    </div>
+                </div>
+                <div class="container py-4" id="jeu">
+                    <div class="row">
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <p id="calcul"></p>
+                        </div>
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                            <input type="number" name="" id="answer" value="">
+                            <p id="finalScore"></p>
+                        </div>
+                        <div class="col-12 d-flex align-items-center justify-content-center mt-3">
+                            <input type="button" value="Répondre" id="answerSend">
+                            <input type="button" id="resetBtn" value="Recommencer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 text-center scoreQuestion">
+                <h2>Question:</h2>
+                <p class="ScoreQuestionContent" id="questionNb" value="">0/5</p>
+            </div>
+            <div class="col-8 text-center">
+                <p id="congratulations"></p>
+            </div>
+            <div class="col-2 text-center scoreQuestion">
+                <h2>Score:</h2>
+                <p class="ScoreQuestionContent" id="score" value="">0/5</p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/monscript.js" async></script>
+
+</body>
+</html>
